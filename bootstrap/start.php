@@ -24,11 +24,25 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
+$env = $app->detectEnvironment(
+    function () {
 
-	'local' => array('homestead'),
+        // detect server environment
+        if (getenv('APP_ENVIRONMENT')) {
+            return getenv('APP_ENVIRONMENT');
+        }
 
-));
+        // override environment using file
+        // bootstrap/environment.php with following content:
+        // <?php return 'local';
+        $environmentFile = __DIR__.'/environment.php';
+        if (is_file($environmentFile)) {
+            return require($environmentFile);
+        }
+
+        return 'production';
+    }
+);
 
 /*
 |--------------------------------------------------------------------------
