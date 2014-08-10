@@ -79,3 +79,14 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| Others Additional Files
+|--------------------------------------------------------------------------
+|
+| Application specific files
+|
+*/
+
+require app_path().'/helpers.php';
