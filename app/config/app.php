@@ -124,6 +124,7 @@ return array(
 
         // third party providers
         'LeroyMerlin\LaraSniffer\ServiceProvider',
+        'Bigecko\LaravelTheme\LaravelThemeServiceProvider',
 	),
 
 	/*
@@ -191,6 +192,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
+        // third party aliases
+        'Theme' => 'Bigecko\LaravelTheme\Facade',
 	),
 
 );

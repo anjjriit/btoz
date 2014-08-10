@@ -21,10 +21,10 @@
     </head>
 
     <body>
-        @include('theme::partials.alert')
+        @include('partials.alert')
 
         <div class="viewport">
-            @include('theme::partials.header')
+            @include('partials.header')
             @yield('content')
         </div>
 

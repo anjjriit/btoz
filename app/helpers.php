@@ -32,8 +32,7 @@ if ( ! function_exists('theme_asset'))
      */
     function theme_asset($asset)
     {
-        $theme    = Config::get('app.theme');
-        return asset('themes/' . $theme . '/assets/' . $asset);
+            return Theme::asset('assets/' . $asset);
     }
 }
 
@@ -48,8 +47,7 @@ if ( ! function_exists('theme_asset_hashed'))
     function theme_asset_hashed($asset)
     {
         $modifier = null;
-        $theme    = Config::get('app.theme');
-        $file     = public_path('themes/' . $theme . '/assets/' . $asset);
+        $file     = Theme::publicPath('assets/' . $asset);
         if(is_file($file))
         {
             $hash = md5(filemtime($file));
