@@ -9,7 +9,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="{{ theme_asset_hashed('css/metro.min.css') }}">
+        <link rel="stylesheet" href="{{ theme_asset_hashed('css/style.css') }}">
         <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
