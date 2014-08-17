@@ -19,9 +19,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch(['assets/less/metro/*', 'assets/less/*'], ['less']);
+    gulp.watch(['assets/less/metro/*', 'assets/less/style.less'], ['less']);
 });
 
-gulp.task('default', ['watch'], function(){
-
-});
+gulp.task('default', ['watch']);
