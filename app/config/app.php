@@ -49,7 +49,7 @@ return array(
     |
     */
 
-    'locale'          => 'en',
+    'locale'          => 'id',
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -115,9 +115,14 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
         // third party providers
+        'Way\Generators\GeneratorsServiceProvider',
         'LeroyMerlin\LaraSniffer\ServiceProvider',
         'Bigecko\LaravelTheme\LaravelThemeServiceProvider',
-        'Zizaco\Confide\ServiceProvider',
+        'Barryvdh\DomPDF\ServiceProvider',
+        'AdamWathan\BootForms\BootFormsServiceProvider',
+        'Robbo\Presenter\PresenterServiceProvider',
+
+        'Buzz\Core\ServiceProvider',
     ),
     /*
     |--------------------------------------------------------------------------
@@ -182,9 +187,13 @@ return array(
         'URL'               => 'Illuminate\Support\Facades\URL',
         'Validator'         => 'Illuminate\Support\Facades\Validator',
         'View'              => 'Illuminate\Support\Facades\View',
+
         // third party aliases
-        'Theme'             => 'Bigecko\LaravelTheme\Facade',
-        'Confide'           => 'Zizaco\Confide\Facade',
+        'Theme'       => 'Bigecko\LaravelTheme\Facade',
+        'PDF'         => 'Barryvdh\DomPDF\Facade',
+        'BootForm'    => 'AdamWathan\BootForms\Facades\BootForm'
+
     ),
 
+    'theme' => 'metro'
 );

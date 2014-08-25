@@ -6203,3 +6203,24 @@ button.close {
 .table .table {
   background-color: #ffffff;
 }
+h2.page-title {
+  margin-bottom: 40px;
+}
+dl > dd {
+  margin-bottom: 10px;
+}
+.mb {
+  margin-bottom: 20px;
+}
+.pad {
+  padding: 20px;
+}
+body {
+  margin-top: 50px;
+}
+#viewport {
+  margin: 0 auto;
+}
+.page {
+  margin-top: 20px;
+}

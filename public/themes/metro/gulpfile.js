@@ -4,12 +4,6 @@ var gulp = require('gulp')
     server = require('tiny-lr')(),
     less = require("gulp-less");
 
-gulp.task('listen', function(done) {
-  server.listen(123, function() {
-    done();
-  });
-});
-
 // task
 gulp.task('less', function () {
     gulp.src('assets/less/style.less')
