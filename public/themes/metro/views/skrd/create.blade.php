@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container page">
+    <div class="mb">
+        <a class="btn-link" href="{{ route('skrd.index') }}">&laquo; Kembali</a>
+    </div>
+
     <h2 class="page-title ac">Form SKRD</h2>
 {{ BootForm::openHorizontal(3, 9)->action(route('skrd.store')) }}
     {{ BootForm::select('Jenis Retribusi', 'nama_retribusi', ['Retribusi Pengendalian Menara Telekomunikasi' => 'Retribusi Pengendalian Menara Telekomunikasi']) }}
