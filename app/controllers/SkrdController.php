@@ -38,7 +38,7 @@ class SkrdController extends \BaseController {
         try
         {
             $this->repository->store(Input::all());
-            return Redirect::back()->withInfo('SKRD Berhasil Dibuat');
+            return Redirect::route('skrd.index')->withInfo('SKRD Berhasil Dibuat');
         }
         catch (ValidationException $e)
         {

@@ -20,7 +20,7 @@ class Repository
 
     public function paginate()
     {
-        return $this->model->paginate();
+        return $this->model->orderBy('id', 'desc')->paginate(100);
     }
 
     public function find($id)

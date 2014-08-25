@@ -10,7 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-Route::get('/', ['uses' => 'SampleController@index']);
+Route::get('/', ['uses' => 'SkrdController@index']);
 
 Route::resource('skrd', 'SkrdController');
 Route::get('skrd/{id}/pdf', ['as' => 'skrd.pdf', 'uses' => 'SkrdController@getPdf']);

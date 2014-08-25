@@ -1,6 +1,9 @@
 @extends('layouts.base')
 @section('content')
     <div class="container page">
+        <div class="mb">
+            <a class="btn-link" href="{{ route('skrd.index') }}">&laquo; Kembali</a>
+        </div>
         <h2 class="page-title">Detil SKRD</h2>
         <div class="btn-group mb">
             <a class="btn btn-default" target="_blank" href="{{ route('skrd.pdf', ['id' => $item['id']]) }}"><i class="fa fa-print"></i> Print</a>

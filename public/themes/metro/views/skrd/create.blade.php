@@ -1,7 +1,8 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="container">
+<div class="container page">
+    <h2 class="page-title ac">Form SKRD</h2>
 {{ BootForm::openHorizontal(3, 9)->action(route('skrd.store')) }}
     {{ BootForm::select('Jenis Retribusi', 'nama_retribusi', ['Retribusi Pengendalian Menara Telekomunikasi' => 'Retribusi Pengendalian Menara Telekomunikasi']) }}
     {{ BootForm::text('Nomor Urut', 'nomor_urut') }}

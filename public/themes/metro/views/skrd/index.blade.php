@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-    <h2 class="page-title">SKRD</h2>
+    <h2 class="page-title">SKRD <a class="btn btn-primary" href="{{ route('skrd.create') }}">Buat Baru</a></h2>
 
     <table class="table table-bordered">
         <thead>
